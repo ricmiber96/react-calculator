@@ -8,13 +8,12 @@ var history = ""
 
 function App() {
 
-  const [resum, setResum] = useState("")
-  const [result, setResult] = useState(1)
+  const [resum, setResum] = useState(0)
+  const [result, setResult] = useState(0)
 
   const historyFunction = (operator) => {
 
     history = history + operator
-    console.log(history);
     setResum(history)
   }
 
